@@ -1,26 +1,37 @@
+
 # TDA Motion Studio
 
-A free browser-based music visualizer and video export prototype.
+A free browser-based music visualizer and AI music-video workflow for TDA.
 
-## Run locally
-Open `index.html` in a recent desktop Chrome or Edge browser. Upload a song, select a visual style, set title/artist and motion settings, then click **Export video**. Export records in real time, so keep the tab open. WebM is the expected output format.
+## Features
+- Upload MP3, WAV, and other supported audio formats.
+- Create animated visuals that react to your music.
+- Choose Cyber City, Cosmic, Inferno, and Glitch styles.
+- Customize colors, motion, titles, and video format.
+- Export videos in WebM format.
+- Build AI-generated music-video storyboards and copy scene prompts.
+- Import video clips generated using other tools.
+
+## Run the Website
+1. Download or copy `index.html`.
+2. Open it in Chrome or Edge.
+3. Upload your song.
+4. Customize the visualizer.
+5. Use AI Scene Lab to create scene prompts.
+6. Import generated video clips and export your project.
+
+## Limitations
+AI Scene Lab generates prompts, not AI footage. Imported clips are previewed one at a time. Video export depends on browser support and records in real time.
 
 ## Publish with GitHub Pages
-1. Create a GitHub repository.
-2. Upload `index.html` and `README.md` to the repository root.
-3. Open Settings → Pages.
-4. Choose deploy from branch, select `main` and `/ (root)`, then save.
+1. Upload `index.html` and `README.md` to your GitHub repository.
+2. Open Settings, then Pages.
+3. Choose deployment from a branch.
+4. Select `main` and `/(root)`.
+5. Save and open the website URL GitHub provides.
 
-## Current limits
-- This is an audio-reactive animated visualizer, not AI-generated 3D character animation yet.
-- Exports run in real time (a 3-minute video takes about 3 minutes).
-- Browser export support varies. Chrome/Edge recommended; WebM is expected, MP4 is not built in.
-- Very high resolution/frame rate may lag on slower devices.
-- Audio stays in the browser; there is no upload server or account system.
-
-## AI animation roadmap
-1. Add scene/storyboard prompts and reusable scene presets.
-2. Connect an AI video-generation provider through a backend; never expose API keys in browser JavaScript.
-3. Generate short clips per scene, then stitch them with the song using FFmpeg on a backend or desktop worker.
-4. Add job status, cost estimates, and a review step before rendering.
-5. Only use music, images, voices and characters the user has permission to use.
+## Future Upgrades
+- Multi-clip editing timeline.
+- Automatic beat detection and scene cuts.
+- AI video generation integration.
+- Project save and load.
